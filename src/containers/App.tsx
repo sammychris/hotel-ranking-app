@@ -96,12 +96,12 @@ function App() {
     if (!validStr(hotelFields.country)) return alert('Country cannot be empty');
     if (!validStr(hotelFields.address)) return alert('Address cannot be empty');
     if (!validStr(hotelFields.rating)) return alert('Rating cannot be empty');
-    if (!validStr(hotelFields.brandId)) return alert('Brand must be created first!');
+    if (!validStr(hotelFields.brandId)) return alert('Select a brand or click the plus icon on the header to create a brand!');
 
     const hotelIndex = hotels.findIndex((hotel: hotelFieldsProps) => hotel.id === hotelFields.id);
     if (isNewItem(hotelIndex)) {
       createHotel();
-      window.alert('You\'ve successfully create a new hotel!');
+      window.alert('You\'ve successfully ranked an hotel!');
     }
     else {
       updateHotel(hotelIndex);
@@ -208,7 +208,7 @@ function App() {
 
   const onFilterChange = async (values:  string[]) => dispatch(setFilterByBrands(values));
 
-  
+
   const filterElements = (hotels: hotelFieldsProps[], filters: string[]) => {
     const newHotels = [...hotels];
     const brand = (id: string) => brands.find((item: brandFieldsProps) => item.id === id);
