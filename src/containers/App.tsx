@@ -142,7 +142,7 @@ function App() {
   }
 
 
-  const updateHotel = (findByIndex: number) => { // add a new hotel!
+  const updateHotel = (findByIndex: number) => { // upate a hotel!
     const newHotels = JSON.parse(JSON.stringify(hotels));
     newHotels[findByIndex].name = hotelFields.name.trim();
     newHotels[findByIndex].brandId = hotelFields.brandId.trim();
@@ -202,10 +202,13 @@ function App() {
     onChangeView('brandFields');
   }
 
+
   const validStr = (str: string) =>  str?.toLowerCase()?.trim();
+
 
   const onFilterChange = async (values:  string[]) => dispatch(setFilterByBrands(values));
 
+  
   const filterElements = (hotels: hotelFieldsProps[], filters: string[]) => {
     const newHotels = [...hotels];
     const brand = (id: string) => brands.find((item: brandFieldsProps) => item.id === id);
@@ -214,7 +217,9 @@ function App() {
     return newHotels.sort((a: hotelFieldsProps, b: hotelFieldsProps) => Number(b.rating) - Number(a.rating));
   }
 
+
   const filteredHotels = filterElements(hotels, filterByBrands);
+
 
   return (
     <div className="App">
