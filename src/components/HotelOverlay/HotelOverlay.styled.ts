@@ -24,13 +24,12 @@ export const HotelContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
 `
 
 export const HotelOverlay = styled.div`
   padding: 32px 16px;
   background: #fff;
-  position: absolute;
+  position: relative;
   z-index: 3;
   max-height: 50vh;
   overflow: auto;
@@ -38,11 +37,18 @@ export const HotelOverlay = styled.div`
   padding: 0;
   align-items: center;
   padding: 20px;
+  @media (max-width: 720px) {
+    max-height: unset;
+    display: block;
+  }
 `;
 
-export const ProductDetails = styled.div`
-    width: 200px;
+export const Details = styled.div`
     margin: 0 50px;
+    @media (max-width: 720px) {
+      margin:0;
+      margin-top: 10px;
+    }
 `;
 
 export const Image = styled.img`
@@ -56,11 +62,10 @@ export const Image = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 720px) {
+      margin-top: 15px;
+    }
 `;
 
-export const ProductImages = styled.div`
-    display: flex;
-    width: 400px;
-`;
 
 

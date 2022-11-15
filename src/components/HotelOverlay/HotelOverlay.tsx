@@ -10,12 +10,10 @@ const HotelOverlay: FC<S.HotelOverlayProps> = ({hotelFields, brands, onChangeVie
     <S.HotelContainer>
       <S.HotelOverlay>
         <Button cls="danger" position="right" size="small" onClick={() => onChangeView('default')}>close</Button>
-        <S.ProductImages>
-          <div>
-            <S.Image src='https://th.bing.com/th/id/OIP.0vUoFeFRl_RD9_o33r0b2wHaHa?pid=ImgDet&rs=1' />
-          </div>
-        </S.ProductImages>
-        <S.ProductDetails>
+        <div>
+          <S.Image src='https://th.bing.com/th/id/OIP.0vUoFeFRl_RD9_o33r0b2wHaHa?pid=ImgDet&rs=1' />
+        </div>
+        <S.Details>
           
           <Typography variant='h3'>{hotelFields.name}</Typography>
           <Typography variant='h4' style={{ marginBottom: 10 }}>{brand?.name}</Typography>
@@ -32,7 +30,7 @@ const HotelOverlay: FC<S.HotelOverlayProps> = ({hotelFields, brands, onChangeVie
             <Button cls="danger" onClick={() => onDeleteHotel(hotelFields)}>Delete</Button>
           </div>
 
-        </S.ProductDetails>
+        </S.Details>
       </S.HotelOverlay>
       <S.Overlay />
     </S.HotelContainer>

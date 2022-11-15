@@ -12,7 +12,7 @@ export interface CardProps {
 export const Card = styled.div`
   padding: 14px;
   height: 510px;
-  margin: 40px auto;
+  margin: 40px 0;
   &:hover {
     box-shadow: 0px 2px 5px 0px #c7c7c7;
   }
