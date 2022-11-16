@@ -21,7 +21,7 @@ export const Card = styled.div`
 `;
 
 
-export const ProductImg = styled.div`
+export const HotelImage = styled.div`
   display: block;
   width: 350px;
   height: 300px;
@@ -32,6 +32,7 @@ export const ProductImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 `;
 
 export const Overlay = styled.div`

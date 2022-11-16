@@ -37,6 +37,7 @@ export const HotelOverlay = styled.div`
   padding: 0;
   align-items: center;
   padding: 20px;
+  border-radius: 3px;
   @media (max-width: 720px) {
     max-height: unset;
     display: block;
@@ -45,6 +46,7 @@ export const HotelOverlay = styled.div`
 
 export const Details = styled.div`
     margin: 0 50px;
+    width: 300px;
     @media (max-width: 720px) {
       margin:0;
       margin-top: 10px;

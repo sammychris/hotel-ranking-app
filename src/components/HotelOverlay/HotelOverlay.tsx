@@ -15,11 +15,10 @@ const HotelOverlay: FC<S.HotelOverlayProps> = ({hotelFields, brands, onChangeVie
         </div>
         <S.Details>
           
-          <Typography variant='h3'>{hotelFields.name}</Typography>
-          <Typography variant='h4' style={{ marginBottom: 10 }}>{brand?.name}</Typography>
-          <Typography variant='h4'>{hotelFields.country}</Typography>
-          <Typography variant='h4' style={{ marginBottom: 10 }}>{hotelFields.city}</Typography>
-          <Typography variant='p'>{hotelFields.address}</Typography>
+          <Typography variant='h3' style={{ marginBottom: 20 }}>{hotelFields.name}</Typography>
+          <Typography variant='p' style={{ marginBottom: 20, color: 'grey', fontFamily: 'Tahoma' }}>Brand: {brand?.name}</Typography>
+          <Typography variant='p'>{hotelFields.city+', '+hotelFields.country}</Typography>
+          <Typography variant='p' style={{ marginBottom: 20 }}>{hotelFields.address}</Typography>
 
           <div style={{ marginBottom: 20 }}>
             <Rate allowHalf disabled defaultValue={Number(hotelFields.rating)/2} />
