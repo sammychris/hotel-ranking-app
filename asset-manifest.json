@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hotel-ranking-app/static/css/main.445b6344.css",
-    "main.js": "/hotel-ranking-app/static/js/main.09e92857.js",
+    "main.js": "/hotel-ranking-app/static/js/main.5ae6c30c.js",
     "static/js/787.71f3deaa.chunk.js": "/hotel-ranking-app/static/js/787.71f3deaa.chunk.js",
     "index.html": "/hotel-ranking-app/index.html",
     "main.445b6344.css.map": "/hotel-ranking-app/static/css/main.445b6344.css.map",
-    "main.09e92857.js.map": "/hotel-ranking-app/static/js/main.09e92857.js.map",
+    "main.5ae6c30c.js.map": "/hotel-ranking-app/static/js/main.5ae6c30c.js.map",
     "787.71f3deaa.chunk.js.map": "/hotel-ranking-app/static/js/787.71f3deaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.445b6344.css",
-    "static/js/main.09e92857.js"
+    "static/js/main.5ae6c30c.js"
   ]
 }
