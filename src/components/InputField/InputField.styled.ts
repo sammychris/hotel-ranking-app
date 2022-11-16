@@ -11,7 +11,8 @@ export interface InputFieldProps {
 }
 
 export const InputField = styled.input<InputFieldProps>`
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 30px;
   font-size: 18px;
   margin: 5px 0;

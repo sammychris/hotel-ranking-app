@@ -10,7 +10,8 @@ export interface SelectInputFieldsProps {
 }
 
 export const Select = styled.select`
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 30px;
   font-size: 18px;
   margin: 5px 0;

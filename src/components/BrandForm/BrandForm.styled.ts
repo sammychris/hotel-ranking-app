@@ -14,3 +14,9 @@ export const BookForm = styled.div`
     padding: 20px;
     position: relative;
 `;
+
+export const FormContainer = styled.div`
+    max-width: 545px;
+  width: 90%;
+  margin: 80px auto;
+`;

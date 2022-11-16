@@ -16,3 +16,9 @@ export const HotelForm = styled.div`
   position: relative;
 `;
 
+
+export const FormContainer = styled.div`
+max-width: 545px;
+  width: 90%;
+  margin: 80px auto;
+`;
