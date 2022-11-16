@@ -16,7 +16,7 @@ const HotelOverlay: FC<S.HotelOverlayProps> = ({hotelFields, brands, onChangeVie
         <S.Details>
           
           <Typography variant='h3' style={{ marginBottom: 20 }}>{hotelFields.name}</Typography>
-          <Typography variant='p' style={{ marginBottom: 20, color: 'grey', fontFamily: 'Tahoma' }}>Brand: {brand?.name}</Typography>
+          <Typography variant='p' style={{ marginBottom: 20 }}><span>Brand: </span><span style={{color: 'grey', fontFamily: 'Tahoma' }}>{brand?.name}</span></Typography>
           <Typography variant='p'>{hotelFields.city+', '+hotelFields.country}</Typography>
           <Typography variant='p' style={{ marginBottom: 20 }}>{hotelFields.address}</Typography>
 
