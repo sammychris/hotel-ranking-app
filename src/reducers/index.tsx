@@ -8,7 +8,6 @@ export type hotelFieldsProps = {
   country: string
   address: string
   rating: string
-  image: string
   brandId: string
 }
 
@@ -31,7 +30,6 @@ const reducerSlice = createSlice({
       country: '',
       address: '',
       rating: '',
-      image: '',
       brandId: '',
     },
     brandFields: {

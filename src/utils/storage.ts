@@ -1,9 +1,9 @@
 export function saveItem(key: string, value: []) {
-  sessionStorage.setItem(key, JSON.stringify(value));
+  localStorage.setItem(key, JSON.stringify(value));
 }
   
 export function getItem(key: string) {
-  const got = sessionStorage.getItem(key);
+  const got = localStorage.getItem(key);
   return got ? JSON.parse(got) : [];
 }
   
